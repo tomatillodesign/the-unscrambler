@@ -1,25 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import LetterForm from './LetterForm.js';
+
+//let dictionary = require('./Dictionary.json');
+//console.log(Object.keys(dictionary));
+//let letters = '';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <h1>Welcome to The Unscrambler</h1>
+          <div className="clb-credit">Created by Chris Liu-Beers &middot; Tomatillo Design</div>
         </header>
+        <LetterForm />
+        <footer className="clb-footer">Dictionary Source: 1913 Edition of Webster's Unabridged English Dictionary</footer>
       </div>
     );
   }

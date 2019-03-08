@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+li {
+     text-align: left;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -10,17 +14,41 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+     background: #0F2027;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #609eb9, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #609eb9, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+     background-size: 300% 300%;
+     	-webkit-animation: Gradient 10s ease infinite;
+     	-moz-animation: Gradient 10s ease infinite;
+     	animation: Gradient 10s ease infinite;
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.form-area {
+     padding: 40px;
 }
 
 @keyframes App-logo-spin {
@@ -30,4 +58,79 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.form-area {
+     margin-left: auto;
+     margin-right: auto;
+     display: inline-block;
+}
+
+.clb-credit {
+     padding-bottom: 40px;
+     font-size: 16px;
+     font-weight: 300;
+}
+
+.letter-form-area {
+     margin-top: 40px;
+     font-size: 20px;
+     font-weight: 200;
+}
+
+.form-area ul li {
+     margin-top: 8px;
+     margin-bottom: 8px;
+}
+
+.word-only {
+     /* text-decoration: underline; */
+     border-bottom: 2px dotted #555;
+     text-transform: uppercase;
+}
+
+.word-only:hover {
+     background: yellow;
+     cursor: help;
+}
+
+#letter-form, #letter-area {
+     font-size: 32px;
+}
+
+#letter-area {
+     text-transform: uppercase;
+     padding: 12px;
+}
+
+input, textarea, select {
+    font: 200 11px system-ui;
+    border-radius: 3px;
+    margin-left: 12px;
+}
+
+
+#clear-button {
+    background-color: #203A43;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 16px 24px;
+    text-transform: uppercase;
+    width: auto;
+    margin-left: 12px;
+}
+
+#clear-button:hover {
+     background: red;
+}
+
+.clb-footer {
+     padding: 40px;
+     font-size: 10px;
+     font-style: italic;
+     font-weight: 300;
 }
