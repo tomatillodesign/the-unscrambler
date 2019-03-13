@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import LetterForm from './LetterForm.js';
+import UpdatedLetterForm from './UpdatedLetterForm.js';
+
+//import ProgressBar from './react-bootstrap/ProgressBar';
+import { ProgressBar } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
 
 //let dictionary = require('./Dictionary.json');
 //console.log(Object.keys(dictionary));
@@ -11,11 +16,13 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Welcome to The Unscrambler</h1>
+          <h1>The Unscrambler</h1>
           <div className="clb-credit">Created by Chris Liu-Beers &middot; Tomatillo Design</div>
         </header>
-        <LetterForm />
-        <footer className="clb-footer">Dictionary Source: 1913 Edition of Webster's Unabridged English Dictionary</footer>
+
+        <UpdatedLetterForm />
+
+        <footer className="clb-footer">Source: 1913 Edition of Webster's Unabridged English Dictionary</footer>
       </div>
     );
   }

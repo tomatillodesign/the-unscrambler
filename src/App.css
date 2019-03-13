@@ -25,10 +25,10 @@ li {
      background: -webkit-linear-gradient(to right, #609eb9, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
      background: linear-gradient(to right, #609eb9, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-     background-size: 300% 300%;
+     /* background-size: 300% 300%;
      	-webkit-animation: Gradient 10s ease infinite;
      	-moz-animation: Gradient 10s ease infinite;
-     	animation: Gradient 10s ease infinite;
+     	animation: Gradient 10s ease infinite; */
 }
 
 @keyframes Gradient {
@@ -78,20 +78,50 @@ li {
      font-weight: 200;
 }
 
+.form-area {
+     max-width: 1200px;
+     display: block;
+}
+
+.form-area ul {
+     margin: 20px;
+     display: block;
+     padding: 0;
+}
+
 .form-area ul li {
-     margin-top: 8px;
-     margin-bottom: 8px;
+     margin: 8px;
+     list-style-type: none;
+     display: inline-block;
+     float: left;
+     overflow-wrap: normal;
+     padding: 8px 16px;
+     background-color: #203A43;
+     border-radius: 3px;
+     color: #fff;
+     cursor: pointer;
+     line-height: 1.2;
+     text-transform: uppercase;
+}
+
+.form-area ul li:hover {
+     background: #609eb9;
 }
 
 .word-only {
      /* text-decoration: underline; */
-     border-bottom: 2px dotted #555;
-     text-transform: uppercase;
+     /* border-bottom: 2px dotted #555;
+     text-transform: uppercase; */
 }
 
 .word-only:hover {
-     background: yellow;
-     cursor: help;
+     /* background: yellow;
+     cursor: help; */
+}
+
+.combos {
+     clear: both;
+     padding-top: 40px;
 }
 
 #letter-form, #letter-area {
@@ -110,14 +140,14 @@ input, textarea, select {
 }
 
 
-#clear-button {
+#clear-button, #run-button {
     background-color: #203A43;
     border: none;
     border-radius: 3px;
     color: #fff;
     cursor: pointer;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 300;
     padding: 16px 24px;
     text-transform: uppercase;
     width: auto;
@@ -128,9 +158,27 @@ input, textarea, select {
      background: red;
 }
 
+#run-button:hover {
+     background: green;
+}
+
 .clb-footer {
      padding: 40px;
      font-size: 10px;
      font-style: italic;
      font-weight: 300;
+}
+
+
+.word-hit .btn-dictionary {
+     text-transform: uppercase;
+     color: #fff;
+}
+
+.word-hit .btn-dictionary:hover {
+     color: #fff;
+}
+
+.dictionary-word-modal-title {
+     text-transform: uppercase;
 }
