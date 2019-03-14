@@ -70,13 +70,9 @@ startSearch(letters) {
 
      function powerSet(str) {
 
-         var obj = {}
-         //This loop is to take out all duplicate number/letter
-         for(var i=0;i<str.length; i++){
-            obj[str[i]] = true;
-         }
-         //variable array will have no duplicates
-         var array = Object.keys(obj);
+          // turn string into array with each letter
+         let array = str.split("");
+
          var result = [[]];
          for(var j=0; j<array.length ;j++){
             //this line is crucial! It prevents us from infinite loop
@@ -85,7 +81,9 @@ startSearch(letters) {
               result.push(result[x].concat(array[j]))
             }
          }
+
      return result;
+
      }
 
      /* Improved Anagram Engine */
