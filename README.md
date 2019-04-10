@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Currently Working On - filter-results Branch
+Create a checkbox for each unique letter that appears anywhere in the results
+If checked, then filter results so that all results must contain that letter
+
 ## Available Scripts
 
 In the project directory, you can run:
