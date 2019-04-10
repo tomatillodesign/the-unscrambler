@@ -182,3 +182,15 @@ input, textarea, select {
 .dictionary-word-modal-title {
      text-transform: uppercase;
 }
+
+.form-check {
+     text-transform: uppercase;
+}
+
+.filter-results-area h4 {
+     font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 700;
+}
